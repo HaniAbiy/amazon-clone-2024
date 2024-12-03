@@ -1,0 +1,41 @@
+.category_card{
+    height: 255px;
+    width: 255px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2 );
+}
+.category_card img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+    padding: 0px 10px;
+
+}
+/* .category_card h2{
+    padding-bottom: 5px;
+    text-align: center;
+} */
+ .category_card h3,
+ .category_card p{
+    padding: 5px;
+    margin-left: 15px;
+} 
+.category_card a{
+ 
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+
+.category_card p{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(38, 157, 208);
+}
+.category_container{
+ position: relative;
+ margin-top: -10vh;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ place-items: center;
+
+}
