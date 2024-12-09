@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react'
 import headerStyles from "../Header/header.module.css";
 import amazonLogo from "../../assets/amazon_PNG11.png";
-import { IoSearchOutline } from "react-icons/io5";
-import { BiCart } from "react-icons/bi";
+import { IoSearch } from "react-icons/io5";
+import { BiCartAdd } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import usaFlag from "../../assets/usa-flag-icon.png"
 import HeaderChild from './HeaderChild';
@@ -45,7 +45,7 @@ const Header = () => {
             <option value="">All</option>
           </select>
           <input type="text" name="" id="" placeholder="Search Amazon" />
-          <IoSearchOutline size={25} />
+          <IoSearch size={40} />
         </div>
 
         {/* 3rd section login, returns & cart */}
@@ -62,7 +62,7 @@ const Header = () => {
                 {user ? (
                   <>
                     <p>Hello {user?.email.split("@")[0]}</p>
-                    <span onClick={()=>auth.signOut()}>Sign Out</span>
+                    <span onClick={() => auth.signOut()}>Sign Out</span>
                   </>
                 ) : (
                   <>
@@ -77,7 +77,7 @@ const Header = () => {
               <span>& Orders</span>
             </Link>
             <Link to="/cart" className={headerStyles.cart}>
-              <BiCart size={35} />
+              <BiCartAdd size={33} /> <h> Cart</h>
               <span>{totalItem}</span>
             </Link>
           </div>

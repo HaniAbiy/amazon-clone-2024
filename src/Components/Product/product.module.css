@@ -12,7 +12,7 @@
 
  .card_container:hover .button{
     display: block;
-    background-color: rgb(72, 183, 220);
+    /* background-color: rgb(72, 183, 220); */
 
 } 
 .card_container img{
@@ -34,11 +34,14 @@
     position: absolute;
     bottom: 0;
     left: 0;
+  
 }
 
 .button:hover{
     background-color: var(--primary-shade);
 }
+
+
 .rating h3{
     display: flex;
     align-items: center;

@@ -28,14 +28,25 @@ function Results() {
 
   return (
     <Layout>
-      <div >
-        <h1 style={{ padding: "30px" }}>Results</h1> 
+      <div>
+        <h1 style={{ padding: "30px" }}>
+          Results{" "}
+          <p style={{ fontSize: "12px" }}>
+            Check each product page for other buying options. Price and other
+            details may vary based on product size and color.
+          </p>
+        </h1>
+
         <p style={{ padding: "30px" }}>Category/{categoryName}</p>
         <hr />
         <div className={resultCss.product_container}>
           {results?.map((product) => (
-            <ProductCard key={product.id} product={product} renderAdd={true}
-            renderDesc={false} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              renderAdd={true}
+              renderDesc={false}
+            />
           ))}
         </div>
       </div>

@@ -17,5 +17,33 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-export const auth=getAuth(app);
-export const db=app.firestore();
+export const auth = getAuth(app);
+export const db = app.firestore();
+
+
+// // Initialize Firestore example
+// const db = firebase.firestore();
+
+// // Add a new document
+// db.collection('products').add({
+//   name: 'Awesome Product',
+//   price: 19.99,
+//   description: 'This is a great product!'
+// })
+// .then(docRef => {
+//   console.log('Document written with ID: ', docRef.id);
+// })
+// .catch(error => {
+//   console.error('Error adding document: ', error);
+// });
+
+// // Read data
+// db.collection('products').get()
+// .then(snapshot => {
+//   snapshot.forEach(doc => {
+//     console.log(doc.id, '=>', doc.data());
+//   });
+// })
+// .catch(error => {
+//   console.error('Error getting documents: ', error);
+// });

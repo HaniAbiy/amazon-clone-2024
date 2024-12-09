@@ -1,26 +1,14 @@
 .hero_img{
     position: relative;
 }
-
-/* .hero_img::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient(to bottom,
-    rgb(22, 20, 20), 
-    rgb(254, 252, 252),
-    );
-} */
  
-  /* .hero_img::before { */
-  /* content: "";
-  position: absolute;
-  bottom: 0; /* Position the pseudo-element at the bottom */
-  /* left: 0; Ensure it spans the full width */
-  /* width: 100%; */
-  /* height: 300px; Height of the pseudo-element */
-  /* background-image: linear-gradient(to bottom, rgb(79, 84, 89), rgb(253, 252, 252));   */
-  /* z-index: 1; */
-/* }        */
+.hero_img::before { 
+   content: "";
+   position: absolute;
+   bottom: 0; 
+   /* left: 0;  */
+   width: 100%; 
+   height: 300px; 
+    background-image: linear-gradient(to bottom, rgb(225, 225, 225, 0), rgb(255, 255, 255));    
+    /* z-index: 1;   */
+}
